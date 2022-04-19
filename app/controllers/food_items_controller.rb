@@ -5,7 +5,7 @@ class FoodItemsController < ApplicationController
     end
 
     def serialize(fooditem)
-        fooditem.to_json
+        fooditem.to_json(include: :diets)
     end
 
 end

@@ -19,7 +19,8 @@ alaskan_king_salmon = FoodItem.create(item_name: "Alaskan King Salmon", serving_
 
 # High Protein
 grilled_chicken = FoodItem.create(item_name: "Grilled Chicken", serving_size: "3 oz",number_of_calories: 126, image: "https://www.lecremedelacrumb.com/wp-content/uploads/2019/05/best-easy-grilled-chicken-2-500x500.jpg",on_meal_plan: false, number_of_servings: nil)
-peanut_butter = FoodItem.create(item_name: "Peanut Butter", serving_size: "1 tbsp",number_of_calories: 100, image: "https://www.lecremedelacrumb.com/wp-content/uploads/2019/05/best-easy-grilled-chicken-2-500x500.jpg",on_meal_plan: false, number_of_servings: nil)
+peanut_butter = FoodItem.create(item_name: "Peanut Butter", serving_size: "1 tbsp",number_of_calories: 100, image: "https://pinchofyum.com/wp-content/uploads/Homemade-Peanut-Butter-Square.png
+",on_meal_plan: false, number_of_servings: nil)
 lentils = FoodItem.create(item_name: "Lentils", serving_size: "1 cup",number_of_calories: 230, image: "https://www.chatelaine.com/wp-content/uploads/2014/03/lentils_iStock-e1426011169167.jpg",on_meal_plan: false, number_of_servings: nil)
 cottage_cheese = FoodItem.create(item_name: "Cottage Cheese", serving_size: "100 g",number_of_calories: 98, image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F44%2F2018%2F03%2F27%2F5488032.jpg&q=60",on_meal_plan: false, number_of_servings: nil)
 tuna = FoodItem.create(item_name: "Canned Tuna", serving_size: "1 can",number_of_calories: 110, image: "https://images.heb.com/is/image/HEBGrocery/000204850?fit=constrain,1&wid=800&hei=800&fmt=jpg&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0",on_meal_plan: false, number_of_servings: nil)
@@ -34,7 +35,7 @@ chicken_sausage = FoodItem.create(item_name: "Chicken Sausage", serving_size: "1
 # Mediterranean
 olive_oil = FoodItem.create(item_name: "Olive Oil", serving_size: "1 tsp",number_of_calories: 40, image: "https://www.eatthis.com/wp-content/uploads/sites/4/media/images/ext/454073426/100-calories-oliveoil.jpg",on_meal_plan: false, number_of_servings: nil)
 mussels = FoodItem.create(item_name: "Mussels", serving_size: "100 g",number_of_calories: 172, image: "https://foodstrend.com/wp-content/uploads/2021/08/1-21.jpg",on_meal_plan: false, number_of_servings: nil)
-mozzerella = FoodItem.create(item_name: "Mozzerella Cheese", serving_size: "1 oz",number_of_calories: 78, image: "https://s3.amazonaws.com/img.mynetdiary.com/SystemPictures/web/i107.jpg",on_meal_plan: false, number_of_servings: nil)
+mozzarella = FoodItem.create(item_name: "Mozzarella Cheese", serving_size: "1 oz",number_of_calories: 78, image: "https://s3.amazonaws.com/img.mynetdiary.com/SystemPictures/web/i107.jpg",on_meal_plan: false, number_of_servings: nil)
 red_wine = FoodItem.create(item_name: "Red Wine", serving_size: "1 cup",number_of_calories: 200, image: "https://hips.hearstapps.com/del.h-cdn.co/assets/17/22/1496173923-1496159283-glass-of-red-wine.jpg",on_meal_plan: false, number_of_servings: nil)
 grilled_octopus = FoodItem.create(item_name: "Grilled Octopus", serving_size: "100 g",number_of_calories: 163, image: "https://images.eatthismuch.com/img/1943527_LLAMITAZ_36ea3524-d4c1-4fbc-bdc6-f59ac333301e.jpg",on_meal_plan: false, number_of_servings: nil)
 
@@ -157,10 +158,10 @@ FoodItemDiet.create(food_item_id: mussels.id, diet_id:mediterranean.id)
 FoodItemDiet.create(food_item_id: mussels.id, diet_id:pescatarian.id)
 
 
-FoodItemDiet.create(food_item_id: mozzerella.id, diet_id:keto.id)
-FoodItemDiet.create(food_item_id: mozzerella.id, diet_id:mediterranean.id)
-FoodItemDiet.create(food_item_id: mozzerella.id, diet_id:pescatarian.id)
-FoodItemDiet.create(food_item_id: mozzerella.id, diet_id:vegetarian.id)
+FoodItemDiet.create(food_item_id: mozzarella.id, diet_id:keto.id)
+FoodItemDiet.create(food_item_id: mozzarella.id, diet_id:mediterranean.id)
+FoodItemDiet.create(food_item_id: mozzarella.id, diet_id:pescatarian.id)
+FoodItemDiet.create(food_item_id: mozzarella.id, diet_id:vegetarian.id)
 
 FoodItemDiet.create(food_item_id: red_wine.id, diet_id:keto.id)
 FoodItemDiet.create(food_item_id: red_wine.id, diet_id:paleo.id)
