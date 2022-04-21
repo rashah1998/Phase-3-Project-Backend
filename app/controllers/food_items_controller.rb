@@ -10,6 +10,10 @@ class FoodItemsController < ApplicationController
         serialize(fooditem)
     end
 
+    post "/fooditems" do
+        serialize(FoodItem.create(food_item_params))
+    end
+
     private
 
     def serialize(fooditem)
@@ -17,7 +21,7 @@ class FoodItemsController < ApplicationController
     end
 
     def food_item_params
-        allowed_params = %w(item_name number_of_calories serving_size image on_meal_plan number_of_servings)
+        allowed_params = %w(item_name number_of_calories serving_size image on_meal_plan number_of_servings diets_to_add)
         params.select {|param,value| allowed_params.include?(param)}
     end
 
